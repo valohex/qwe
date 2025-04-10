@@ -1,12 +1,16 @@
 
-
-<html lang="en" class="dark" style="color-scheme: dark; --wm-toolbar-height: 284px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-
-
-
-
-
+<!-- saved from url=(0014)about:internet -->
+<html lang="en" class="dark" style="color-scheme: dark; --wm-toolbar-height: 284px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="athena.js.indir" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app225.us.archive.org';v.server_ms=404;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="bundle-playback.js.indir" charset="utf-8"></script>
+<script type="text/javascript" src="wombat.js.indir" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="ruffle.js.indir"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://roflection.com/","20240715210742","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1721077662");
+</script>
 
 
 <!-- End Wayback Rewrite JS Include -->
@@ -18,8 +22,60 @@
 	<link rel="icon" type="image/png" href="">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta name="description" content="Enchance Roblox with Shaderblox Shaders experience Roblox like never before">
-    
-    
+    <script src="saved_resource"></script>
+    <script>
+        tailwind.config = {
+            content: [
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
+  darkMode: "class",
+  theme: {
+    container: {
+      center: true,
+      padding: "1rem",
+    },
+    colors: {
+      current: "currentColor",
+      transparent: "transparent",
+      white: "#FFFFFF",
+      black: "#090E34",
+      dark: "#1D2144",
+      primary: "#4A6CF7",
+      yellow: "#FBB040",
+      "body-color": "#959CB1",
+    },
+    screens: {
+      xs: "450px",
+      // => @media (min-width: 450px) { ... }
+
+      sm: "575px",
+      // => @media (min-width: 576px) { ... }
+
+      md: "768px",
+      // => @media (min-width: 768px) { ... }
+
+      lg: "992px",
+      // => @media (min-width: 992px) { ... }
+
+      xl: "1200px",
+      // => @media (min-width: 1200px) { ... }
+
+      "2xl": "1400px",
+      // => @media (min-width: 1400px) { ... }
+    },
+    extend: {
+      boxShadow: {
+        signUp: "0px 5px 10px rgba(4, 10, 34, 0.2)",
+        one: "0px 2px 3px rgba(7, 7, 77, 0.05)",
+        sticky: "inset 0 -1px 0 0 rgba(0, 0, 0, 0.1)",
+      },
+    },
+  },
+  plugins: [],            
+        }
+    </script>
     <style type="text/tailwindcss">
 
 @import url("");
@@ -84,7 +140,40 @@
         overflow: hidden;
         -moz-overflow: hidden;
     }
-</style><style>@tailwind base;@tailwind components;@tailwind utilities;
+</style><script>
+function rippleButtons() {
+    const buttons = [...document.getElementsByTagName('a'), ...document.getElementsByTagName('button')].filter(
+        // Any buttons with ripple effect will have attribute ripple
+        element => !element.getAttribute('ripple') && !element.classList.contains('no-ripple')
+    )
+
+    buttons.forEach(button => {
+        const target = String(button?.href)
+        button.setAttribute('ripple', null)
+        button.removeAttribute('href')
+        button.addEventListener('click', (event) => {
+            if([...button.children].find(x => x.classList.contains('ripple')) !== undefined) return
+            // not the most efficient but should be enough since bryckia wouldn't have 10000 buttons
+            const rippleElement = document.createElement('div')
+            rippleElement.classList.add('ripple')
+            rippleElement.style = `margin-left: ${event.x - (button.offsetLeft + 80)}px; margin-bottom: ${event.y - (button.offsetTop + 80)}px;`
+            button.appendChild(rippleElement)
+            // breaking seperation of concerns awesome but too lazy for a proper solution
+            setTimeout(() => {
+                button.removeChild(rippleElement)
+                if(target != 'undefined' && target != undefined && !target?.hasAttribute('data-is-no-redirect')) {
+                window.open (target)
+                }
+            }, 500)
+
+            // that means we always assume it'l last 500ms, use js for styling which sucks, in case of a weird bug
+
+        })
+    })
+}
+
+
+</script><style>@tailwind base;@tailwind components;@tailwind utilities;
 
 @import url("");
 
@@ -467,7 +556,7 @@ input[type="checkbox"]:checked ~ label span svg{display:inline-flex}
                         </nav>
                     </div>
                     <div class="flex items-center justify-end pr-16 lg:pr-0">
-					<a <li="" ripple="null"></a><a onclick="window.open(&#39;https://discord.gg/F8yAX7dGuj&#39;)" class=" no-ripple ease-in-up hidden rounded-md bg-primary py-3 px-8 text-base font-bold text-white transition duration-300 hover:bg-opacity-90 hover:shadow-signUp md:block md:px-9 lg:px-6 xl:px-9" id="discord-button">Discord</a>
+					<a href="https://discord.gg/F8yAX7dGuj" target="_blank" class="..." id="discord-button">Discord</a>
                         <div><button class="bg-gray-2 dark:bg-dark-bg flex h-9 w-9 cursor-pointer items-center justify-center rounded-full text-black dark:text-white md:h-14 md:w-14" onclick="themeSwap()" ripple="null"><svg viewBox="0 0 23 23" class="h-5 w-5 stroke-current dark:hidden md:h-6 md:w-6" fill="none">
                                     <path d="M9.55078 1.5C5.80078 1.5 1.30078 5.25 1.30078 11.25C1.30078 17.25 5.80078 21.75 11.8008 21.75C17.8008 21.75 21.5508 17.25 21.5508 13.5C13.3008 18.75 4.30078 9.75 9.55078 1.5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                 </svg><svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="hidden h-5 w-5 dark:block md:h-6 md:w-6">
@@ -782,10 +871,22 @@ input[type="checkbox"]:checked ~ label span svg{display:inline-flex}
     </footer>
     <div class="fixed bottom-8 right-8 z-[99]"></div>
 
+<script>
+
+    let riskAnalysis = []
+    setInterval(() => {
+    }, 1)
+
+    rippleButtons()
+
+</script>
+<script src="a.js.indir"></script>
 
 
-
-
-
+<script>
+function themeSwap() {
+  document.documentElement.classList.toggle("dark");
+}
+</script>
 
 </body></html>
