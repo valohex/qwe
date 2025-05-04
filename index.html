@@ -1,28 +1,84 @@
 
-
-<html lang="en" class="dark" style="color-scheme: dark; --wm-toolbar-height: 284px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-
-
-
-
-
-
-
+<!-- saved from url=(0014)about:internet -->
+<html lang="en" class="dark" style="color-scheme: dark; --wm-toolbar-height: 284px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./Roflection - Roblox Shaders_files/athena.js.indir" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app225.us.archive.org';v.server_ms=404;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="./Roflection - Roblox Shaders_files/bundle-playback.js.indir" charset="utf-8"></script>
+<script type="text/javascript" src="./Roflection - Roblox Shaders_files/wombat.js.indir" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="./Roflection - Roblox Shaders_files/ruffle.js.indir"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://roflection.com/","20240715210742","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1721077662");
+</script>
+<link rel="stylesheet" type="text/css" href="./Roflection - Roblox Shaders_files/banner-styles.css">
+<link rel="stylesheet" type="text/css" href="./Roflection - Roblox Shaders_files/iconochive.css">
 <!-- End Wayback Rewrite JS Include -->
 
     
-    <link rel="stylesheet" href="4f61fb3145b6c21f.css" data-precedence="high">
-    <link rel="stylesheet" href="4df78f2cd73d6b26.css" data-precedence="high">
+    <link rel="stylesheet" href="./Roflection - Roblox Shaders_files/4f61fb3145b6c21f.css" data-precedence="high">
+    <link rel="stylesheet" href="./Roflection - Roblox Shaders_files/4df78f2cd73d6b26.css" data-precedence="high">
     <title>Shaderblox - Roblox Shaders</title>
-	<link rel="icon" type="image/png" href="">
+	<link rel="icon" type="image/png" href="https://web.archive.org/web/20240715210742im_/http://roflection.com/icon.png">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta name="description" content="Enchance Roblox with Shaderblox Shaders experience Roblox like never before">
-    
-    
+    <script src="./Roflection - Roblox Shaders_files/saved_resource"></script>
+    <script>
+        tailwind.config = {
+            content: [
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
+  darkMode: "class",
+  theme: {
+    container: {
+      center: true,
+      padding: "1rem",
+    },
+    colors: {
+      current: "currentColor",
+      transparent: "transparent",
+      white: "#FFFFFF",
+      black: "#090E34",
+      dark: "#1D2144",
+      primary: "#4A6CF7",
+      yellow: "#FBB040",
+      "body-color": "#959CB1",
+    },
+    screens: {
+      xs: "450px",
+      // => @media (min-width: 450px) { ... }
+
+      sm: "575px",
+      // => @media (min-width: 576px) { ... }
+
+      md: "768px",
+      // => @media (min-width: 768px) { ... }
+
+      lg: "992px",
+      // => @media (min-width: 992px) { ... }
+
+      xl: "1200px",
+      // => @media (min-width: 1200px) { ... }
+
+      "2xl": "1400px",
+      // => @media (min-width: 1400px) { ... }
+    },
+    extend: {
+      boxShadow: {
+        signUp: "0px 5px 10px rgba(4, 10, 34, 0.2)",
+        one: "0px 2px 3px rgba(7, 7, 77, 0.05)",
+        sticky: "inset 0 -1px 0 0 rgba(0, 0, 0, 0.1)",
+      },
+    },
+  },
+  plugins: [],            
+        }
+    </script>
     <style type="text/tailwindcss">
 
-@import url("");
+@import url("https://web.archive.org/web/20240715210742cs_/https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -84,9 +140,42 @@
         overflow: hidden;
         -moz-overflow: hidden;
     }
-</style><style>@tailwind base;@tailwind components;@tailwind utilities;
+</style><script>
+function rippleButtons() {
+    const buttons = [...document.getElementsByTagName('a'), ...document.getElementsByTagName('button')].filter(
+        // Any buttons with ripple effect will have attribute ripple
+        element => !element.getAttribute('ripple') && !element.classList.contains('no-ripple')
+    )
 
-@import url("");
+    buttons.forEach(button => {
+        const target = String(button?.href)
+        button.setAttribute('ripple', null)
+        button.removeAttribute('href')
+        button.addEventListener('click', (event) => {
+            if([...button.children].find(x => x.classList.contains('ripple')) !== undefined) return
+            // not the most efficient but should be enough since bryckia wouldn't have 10000 buttons
+            const rippleElement = document.createElement('div')
+            rippleElement.classList.add('ripple')
+            rippleElement.style = `margin-left: ${event.x - (button.offsetLeft + 80)}px; margin-bottom: ${event.y - (button.offsetTop + 80)}px;`
+            button.appendChild(rippleElement)
+            // breaking seperation of concerns awesome but too lazy for a proper solution
+            setTimeout(() => {
+                button.removeChild(rippleElement)
+                if(target != 'undefined' && target != undefined && !target?.hasAttribute('data-is-no-redirect')) {
+                window.open (target)
+                }
+            }, 500)
+
+            // that means we always assume it'l last 500ms, use js for styling which sucks, in case of a weird bug
+
+        })
+    })
+}
+
+
+</script><style>@tailwind base;@tailwind components;@tailwind utilities;
+
+@import url("https://web.archive.org/web/20240715210742cs_/https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /* ! tailwindcss v3.4.5 | MIT License | https://tailwindcss.com */
 
@@ -453,9 +542,115 @@ input[type="checkbox"]:checked ~ label span svg{display:inline-flex}
     </style></head>
 
 
-<body class="dark:bg-black">
+<body class="dark:bg-black"><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display: block; direction: ltr; height: 284px;" toolbar-mode="auto"><template shadowrootmode="closed"><div id="wm-ipp" style="position:fixed;left:0;top:0;right:0;" class="">
+<div id="donato" style="position: relative; width: 100%; height: 217px;">
+  <div id="donato-base" style="height: 217px;">
+    <iframe id="donato-if" src="https://archive.org/includes/donate.php?as_page=1&amp;platform=wb&amp;referer=https%3A//web.archive.org/web/20240715210742/http%3A//roflection.com/" scrolling="no" frameborder="0" style="width:100%; height:100%">
+    </iframe>
+  </div>
+</div><div id="wm-ipp-inside">
+  <div id="wm-toolbar" style="position:relative;display:flex;flex-flow:row nowrap;justify-content:space-between;">
+    <div id="wm-logo" style="/*width:110px;*/padding-top:12px;">
+      <a href="https://web.archive.org/web/" title="Wayback Machine home page"><img src="https://web-static.archive.org/_static/images/toolbar/wayback-toolbar-logo-200.png" srcset="https://web-static.archive.org/_static/images/toolbar/wayback-toolbar-logo-100.png, https://web-static.archive.org/_static/images/toolbar/wayback-toolbar-logo-150.png 1.5x, https://web-static.archive.org/_static/images/toolbar/wayback-toolbar-logo-200.png 2x" alt="Wayback Machine" style="width:100px" border="0"></a>
+    </div>
+    <div class="c" style="display:flex;flex-flow:column nowrap;justify-content:space-between;flex:1;">
+      <form class="u" style="display:flex;flex-direction:row;flex-wrap:nowrap;" target="_top" method="get" action="https://web.archive.org/web/submit" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://roflection.com/" onfocus="this.focus();this.select();" style="flex:1;" autocomplete="off"><input type="hidden" name="type" value="replay"><input type="hidden" name="date" value="20240715210742"><input type="submit" value="Go">
+      </form>
+      <div style="display:flex;flex-flow:row nowrap;align-items:flex-end;">
+                <div class="s" id="wm-nav-captures" style="flex:1;"><a class="t" href="https://web.archive.org/web/*/http://roflection.com/" title="See a list of every capture for this URL">2 captures</a><div class="r" title="Timespan for captures of this URL">15 Jul 2024</div></div>
+        <div class="k">
+          <a href="https://web.archive.org/web/20211001000000/http://roflection.com/" id="wm-graph-anchor">
+            <div id="wm-ipp-sparkline" title="Explore captures for this URL" style="position: relative">
+              <canvas id="wm-sparkline-canvas" width="750" height="27" border="0"></canvas>
+            <div class="yt" style="display: none; width: 25px; height: 27px; left: 625px;"></div><div class="mt" style="display: none; width: 2px; height: 27px; left: 644px;"></div></div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="n">
+      <table>
+        <tbody>
+          <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+          <tr class="m">
+            <td class="b" nowrap="nowrap">Jun</td>
+            <td class="c" id="displayMonthEl" title="You are here: 21:07:42 Jul 15, 2024">Jul</td>
+            <td class="f" nowrap="nowrap">Aug</td>
+          </tr>
+          <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+          <tr class="d">
+            <td class="b" nowrap="nowrap"><img src="https://web-static.archive.org/_static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0"></td>
+            <td class="c" id="displayDayEl" style="width:34px;font-size:22px;white-space:nowrap;" title="You are here: 21:07:42 Jul 15, 2024">15</td>
+            <td class="f" nowrap="nowrap"><img src="https://web-static.archive.org/_static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"></td>
+          </tr>
+          <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+          <tr class="y">
+            <td class="b" nowrap="nowrap">2023</td>
+            <td class="c" id="displayYearEl" title="You are here: 21:07:42 Jul 15, 2024">2024</td>
+            <td class="f" nowrap="nowrap">2025</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="r" style="display:flex;flex-flow:column nowrap;align-items:flex-end;justify-content:space-between;">
+      <div id="wm-btns" style="text-align:right;height:23px;">
+                <span class="xxs">
+          <div id="wm-save-snapshot-success">success</div>
+          <div id="wm-save-snapshot-fail">fail</div>
+          <a id="wm-save-snapshot-open" href="https://web.archive.org/web/20240715210742/http://roflection.com/#" title="Share via My Web Archive" style="display: none;">
+            <span class="iconochive-web"></span>
+          </a>
+          <a href="https://archive.org/account/login.php" title="Sign In" id="wm-sign-in" style="display: inline-block;">
+            <span class="iconochive-person"></span>
+          </a>
+          <span id="wm-save-snapshot-in-progress" class="iconochive-web" style="display: none;"></span>
+        </span>
+                <a class="xxs" href="http://faq.web.archive.org/" title="Get some help using the Wayback Machine" style="top:-6px;"><span class="iconochive-question" style="color:rgb(87,186,244);font-size:160%;"></span></a>
+        <a id="wm-tb-close" href="https://web.archive.org/web/20240715210742/http://roflection.com/#close" style="top:-2px;" title="Close the toolbar"><span class="iconochive-remove-circle" style="color:#888888;font-size:240%;"></span></a>
+      </div>
+      <div id="wm-share" class="xxs">
+        <a href="https://web.archive.org/web/20240715210742/http://web.archive.org/screenshot/http://roflection.com/" id="wm-screenshot" title="screenshot (delta: 8s)" style="visibility: visible;">
+          <span class="wm-icon-screen-shot"></span>
+        </a>
+        <a href="https://web.archive.org/web/20240715210742/http://roflection.com/#" id="wm-video" title="video">
+          <span class="iconochive-movies"></span>
+        </a>
+        <a id="wm-share-facebook" href="https://web.archive.org/web/20240715210742/http://roflection.com/#" data-url="https://web.archive.org/web/20240715210742/https://roflection.com/" title="Share on Facebook" style="margin-right:5px;" target="_blank"><span class="iconochive-facebook" style="color:#3b5998;font-size:160%;"></span></a>
+        <a id="wm-share-twitter" href="https://web.archive.org/web/20240715210742/http://roflection.com/#" data-url="https://web.archive.org/web/20240715210742/https://roflection.com/" title="Share on Twitter" style="margin-right:5px;" target="_blank"><span class="iconochive-twitter" style="color:#1dcaff;font-size:160%;"></span></a>
+      </div>
+      <div style="padding-right:2px;text-align:right;white-space:nowrap;">
+        <a id="wm-expand" class="wm-btn wm-closed" href="https://web.archive.org/web/20240715210742/http://roflection.com/#expand"><span id="wm-expand-icon" class="iconochive-down-solid"></span> <span class="xxs" style="font-size:80%;">About this capture</span></a>
+      </div>
+    </div>
+  </div>
+    <div id="wm-capinfo" style="border-top:1px solid #777;display:none; overflow: hidden">
+        <div id="wm-capinfo-notice" source="api"></div>
+                <div id="wm-capinfo-collected-by">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center">COLLECTED BY</div>
+    <div style="padding:3px;position:relative" id="wm-collected-by-content">
+      <div style="display:inline-block;vertical-align:top;width:49%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/save-page-now)"></span>
+		<div>Collection: <a style="color:#33f;" href="https://archive.org/details/save-page-now" target="_new"><span class="wm-title">Save Page Now</span></a></div>
+	      </div>
+    </div>
+    </div>
+    <div id="wm-capinfo-timestamps">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center" title="Timestamps for the elements of this page">TIMESTAMPS</div>
+    <div>
+      <div id="wm-capresources" style="margin:0 5px 5px 5px;max-height:250px;overflow-y:scroll !important"></div>
+      <div id="wm-capresources-loading" style="text-align:left;margin:0 20px 5px 5px;display:none"><img src="https://web-static.archive.org/_static/images/loading.gif" alt="loading"></div>
+    </div>
+    </div>
+  </div></div></div><link rel="stylesheet" type="text/css" href="./Roflection - Roblox Shaders_files/banner-styles.css"><link rel="stylesheet" type="text/css" href="./Roflection - Roblox Shaders_files/iconochive.css"><div class="wb-autocomplete-suggestions " style="left: 135px; top: 715px; width: 956px;"></div></template>
+</div><div id="wm-ipp-print">The Wayback Machine - https://web.archive.org/web/20240715210742/https://roflection.com/</div>
+<script type="text/javascript">//<![CDATA[
+__wm.bt(750,27,25,2,"web","http://roflection.com/","20240715210742",1996,"https://web-static.archive.org/_static/",["https://web-static.archive.org/_static/css/banner-styles.css?v=p7PEIJWi","https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv"], false);
+  __wm.rw(1);
+//]]></script>
+<!-- END WAYBACK TOOLBAR INSERT -->
  
-    <img src="avatar2.png" alt="Roblox Avatar" class="absolute">
+    <img src="./Roflection - Roblox Shaders_files/avatar2.png" alt="Roblox Avatar" class="absolute">
     <header class="header top-0 left-0 z-40 flex w-full items-center bg-transparent absolute">
         <div class="container">
             <div class="relative -mx-4 flex items-center justify-between">
@@ -467,7 +662,7 @@ input[type="checkbox"]:checked ~ label span svg{display:inline-flex}
                         </nav>
                     </div>
                     <div class="flex items-center justify-end pr-16 lg:pr-0">
-					<a <li="" ripple="null"></a><a onclick="window.open(&#39;https://discord.gg/F8yAX7dGuj&#39;)" class=" no-ripple ease-in-up hidden rounded-md bg-primary py-3 px-8 text-base font-bold text-white transition duration-300 hover:bg-opacity-90 hover:shadow-signUp md:block md:px-9 lg:px-6 xl:px-9" id="discord-button">Discord</a>
+					<a <li="" ripple="null"></a><a onclick="window.open(&#39;https://discord.com/invite/Fg5BxfQUD3&#39;)" class=" no-ripple ease-in-up hidden rounded-md bg-primary py-3 px-8 text-base font-bold text-white transition duration-300 hover:bg-opacity-90 hover:shadow-signUp md:block md:px-9 lg:px-6 xl:px-9" id="discord-button">Discord</a>
                         <div><button class="bg-gray-2 dark:bg-dark-bg flex h-9 w-9 cursor-pointer items-center justify-center rounded-full text-black dark:text-white md:h-14 md:w-14" onclick="themeSwap()" ripple="null"><svg viewBox="0 0 23 23" class="h-5 w-5 stroke-current dark:hidden md:h-6 md:w-6" fill="none">
                                     <path d="M9.55078 1.5C5.80078 1.5 1.30078 5.25 1.30078 11.25C1.30078 17.25 5.80078 21.75 11.8008 21.75C17.8008 21.75 21.5508 17.25 21.5508 13.5C13.3008 18.75 4.30078 9.75 9.55078 1.5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                 </svg><svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="hidden h-5 w-5 dark:block md:h-6 md:w-6">
@@ -492,7 +687,7 @@ input[type="checkbox"]:checked ~ label span svg{display:inline-flex}
                         <p class="mb-12 text-base font-medium !leading-relaxed text-body-color dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
                             Shaderblox is an advanced shader system for Roblox. It is designed to work by reverse engineering .pack files, thus allowing the creation of shaders that can work on Nvidia, AMD, and Intel.</p>
                         <div class="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-                           <a id="download-button" href="https://up.sceptique.eu/f/25050500/84587db6/shaderblox.rar" class="rounded-md bg-primary py-4 px-8 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80" ripple="null">Download</a>
+                           <a id="download-button" href="https://up.sceptique.eu/f/25031622/2f165dd2/shaderblox.rar" class="rounded-md bg-primary py-4 px-8 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80" ripple="null">Download</a>
                     </div>
                 </div>
             </div>
@@ -782,33 +977,15 @@ input[type="checkbox"]:checked ~ label span svg{display:inline-flex}
     </footer>
     <div class="fixed bottom-8 right-8 z-[99]"></div>
 
-
-
-
-
-
-
-
 <script>
-  function themeSwap() {
-    const html = document.documentElement;
-    if (html.classList.contains("dark")) {
-      html.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    } else {
-      html.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    }
-  }
 
-  document.addEventListener("DOMContentLoaded", () => {
-    const storedTheme = localStorage.getItem("theme");
-    if (storedTheme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  });
+    let riskAnalysis = []
+    setInterval(() => {
+    }, 1)
+
+    rippleButtons()
+
 </script>
+<script src="./Roflection - Roblox Shaders_files/a.js.indir"></script>
 
 </body></html>
